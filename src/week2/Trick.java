@@ -4,7 +4,8 @@ public enum Trick {
     JUMP("Jump"),
     FETCH("Fetch"),
     SIT("Sit"),
-    ROLLOVER("Rollover");
+    ROLLOVER("Rollover"),
+    SALUTE("Salute");
 
     private final String displayName;
 
