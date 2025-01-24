@@ -34,8 +34,7 @@ public class Main {
 
         myPetShow.showPets();
         myPetShow.startShow();
-
-
+        
     }
 
     private static void displayPet(Pet pet){
@@ -46,6 +45,5 @@ public class Main {
         if(pet instanceof Cat){
             out.println("What a beautiful Cat man");
         }
-
     }
 }
