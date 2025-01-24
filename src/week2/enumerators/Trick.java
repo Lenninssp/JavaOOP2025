@@ -1,4 +1,4 @@
-package week2;
+package week2.enumerators;
 
 public enum Trick {
     JUMP("Jump"),
@@ -18,3 +18,4 @@ public enum Trick {
     }
 
 }
+

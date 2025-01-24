@@ -1,6 +1,9 @@
 package week2;
 
 import week1.Pet;
+import week2.animals.Cat;
+import week2.animals.Dog;
+import week2.enumerators.Trick;
 
 import java.util.ArrayList;
 import java.util.List;

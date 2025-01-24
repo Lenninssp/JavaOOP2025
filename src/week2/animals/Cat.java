@@ -1,4 +1,7 @@
-package week2;
+package week2.animals;
+
+import week2.enumerators.Moods;
+import week2.enumerators.Trick;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,19 +9,24 @@ import java.util.List;
 import static java.lang.System.out;
 
 public class Cat extends week1.Pet{
-
     private List<Trick> learnedTricks;
     public Cat ( String name, int age, double price){
-        super(name, "Cat", age, price);
+        super(name, age, price);
         this.learnedTricks = new ArrayList<>();
     }
 
     @Override
     public String makeSound(){
-        if(getMood().equals("Happy")){
+        if(getMood() == Moods.HAPPY){
             return "Miauw! Miauw!";
         }
         return "Miauw";
+    }
+
+    @Override
+    public void play(){
+        out.println("The cat is playing and now is happy");
+        setMood(Moods.HAPPY);
     }
 
     public void learnTrick(Trick trick){
