@@ -29,7 +29,7 @@ public class PetShow {
     public void showPets(){
         out.println("List of added pets for the pet show:");
         for(Pet pet : petList) {
-            out.println("-" + pet.getName() + " " + pet.getType());
+            out.println("-" + pet.getName() );
         }
     }
 
