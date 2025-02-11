@@ -54,5 +54,24 @@ public class Main {
 
         petShop.killOldPets();
         petShop.printPets();
+
+
+
+        PetRegistry registry = new PetRegistry();
+
+        // Register some pets
+        registry.registerPet(new Dog("Buddy", 3, 100));
+        registry.registerPet(new Cat("Whiskers", 5, 300));
+        registry.registerPet(new Fish("Nemo", 1, 50, WaterType.SALTWATER));
+
+        // Find a specific pet
+        Pet foundPet = registry.findPetByName("Buddy");
+        if (foundPet != null) {
+            System.out.println("Found " + foundPet.getName() +
+                    "! They say: " + foundPet.makeSound());
+        }
+
+        // Show all registered pets
+        registry.printAllPets();
     }
 }

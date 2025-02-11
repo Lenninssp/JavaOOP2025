@@ -9,17 +9,17 @@ import static java.lang.System.out;
 public class PetRegistry {
     private HashMap<String, Pet> petsByName = new HashMap<>();
 
-    private void registerPet (Pet pet) {
+    public void registerPet (Pet pet) {
         petsByName.put(pet.getName(), pet);
         out.println("Pet successfully added");
 
     }
 
-    private Pet findPetByName( String name){
+    public Pet findPetByName( String name){
         return petsByName.get(name);
     }
 
-    private void printAllPets() {
+    public void printAllPets() {
         out.println("Printing all pets");
         for (String name : petsByName.keySet()){
             Pet pet = petsByName.get(name);
